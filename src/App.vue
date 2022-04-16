@@ -132,10 +132,6 @@ a {
 }
 
 .action-bar {
-  position: absolute;
-  bottom: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
   width: 100%;
   height: 30px;
   padding: 10px 0;
@@ -173,6 +169,12 @@ a {
 .action-bar .page-num {
   font-size: 12px;
   margin-left: 10px;
+}
+
+.flipbook {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 10px;
 }
 
 .flipbook .viewport {

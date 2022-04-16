@@ -122,7 +122,7 @@ html, body {
   height: 100vh;
   max-height: 100vh;
   display: flex;
-  padding-block: 1rem;
+  padding-block: 2rem;
   flex-direction: column;
   align-items: center;
   background-color: #fefbf6;

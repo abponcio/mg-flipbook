@@ -65,6 +65,48 @@ export default
     hasMouse: true
     pageNum: null
   methods:
+    setPhotos: () ->
+       # Simulate asynchronous pages initialization
+      setTimeout (=>
+        vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+
+        if vw < 444
+          @pages = [
+            null
+            'images/1.jpg'
+            'images/2.jpg'
+            'images/3.jpg'
+            'images/7.jpg'
+            'images/4.jpg'
+          ]
+          @pagesHiRes = [
+            null
+            'images-large/1.jpg'
+            'images-large/2.jpg'
+            'images-large/3.jpg'
+            'images-large/7.jpg'
+            'images-large/4.jpg'
+          ]
+        else
+          @pages = [
+            null
+            'images/1.jpg'
+            'images/2.jpg'
+            'images/3.jpg'
+            'images/5.jpg'
+            'images/6.jpg'
+            'images/4.jpg'
+          ]
+          @pagesHiRes = [
+            null
+            'images-large/1.jpg'
+            'images-large/2.jpg'
+            'images-large/3.jpg'
+            'images-large/5.jpg'
+            'images-large/6.jpg'
+            'images-large/4.jpg'
+          ]
+      ),
     onFlipLeftStart: (page) -> console.log 'flip-left-start', page
     onFlipLeftEnd: (page) ->
       console.log 'flip-left-end', page
@@ -85,25 +127,9 @@ export default
       flipbook.flipLeft() if ev.keyCode == 37 and flipbook.canFlipLeft
       flipbook.flipRight() if ev.keyCode == 39 and flipbook.canFlipRight
 
-    # Simulate asynchronous pages initialization
-    setTimeout (=>
-      @pages = [
-        null
-        'images/1.jpg'
-        'images/2.jpg'
-        'images/3.jpg'
-        'images/4.jpg'
-      ]
-      @pagesHiRes = [
-        null
-        'images-large/1.jpg'
-        'images-large/2.jpg'
-        'images-large/3.jpg'
-        'images-large/4.jpg'
-      ]
-    ),
-
+    @setPhotos();
     window.addEventListener 'hashchange', @setPageFromHash
+    window.addEventListener 'resize', @setPhotos
     @setPageFromHash()
 </script>
 

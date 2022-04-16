@@ -154,10 +154,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   max-height: 100vh;
-  display: flex;
   padding-block: 2rem;
-  flex-direction: column;
-  align-items: center;
   background-color: #fefbf6;
   color: #808080;
 }

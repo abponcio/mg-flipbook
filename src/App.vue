@@ -153,8 +153,6 @@ body {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  max-height: 100vh;
-  padding-block: 2rem;
   background-color: #fefbf6;
   color: #808080;
 }
@@ -213,7 +211,7 @@ a {
 
 .flipbook .viewport {
   width: 90vw;
-  height: 70vh;
+  height: 65vh;
 }
 
 .flipbook .bounding-box {

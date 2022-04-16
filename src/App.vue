@@ -18,7 +18,7 @@
       @zoom-start="onZoomStart"
       @zoom-end="onZoomEnd"
     >
-      <div class="view-pdf">Having trouble viewing the invitation? <a href="https://bit.ly/mico-and-grace" target="_blank">Click here to view the PDF.</a></div>
+      <div class="view-pdf">Having trouble viewing the invitation? <br/> <br/><a href="https://bit.ly/mico-and-grace" target="_blank">Click here to view the PDF.</a></div>
       <div class="action-bar">
         <left-icon
           class="btn left"
@@ -137,6 +137,14 @@ export default
 <style>
 @import "~normalize.css/normalize.css";
 
+body {
+  background-color: #fefbf6;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  max-height: 100vh;
+  min-height: 100vh;
+}
 .view-pdf {
   text-align: center;
   font-size: 8px;
@@ -145,7 +153,6 @@ export default
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100vh;
   max-height: 100vh;
   display: flex;
   padding-block: 2rem;
@@ -153,7 +160,6 @@ export default
   align-items: center;
   background-color: #fefbf6;
   color: #808080;
-  overflow: hidden;
 }
 
 a {
@@ -208,7 +214,7 @@ a {
 
 .flipbook .viewport {
   width: 90vw;
-  height: 65vh;
+  height: 70vh;
 }
 
 .flipbook .bounding-box {

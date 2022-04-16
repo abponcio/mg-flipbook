@@ -142,8 +142,9 @@ body {
   display: flex;
   place-items: center;
   justify-content: center;
-  max-height: 100vh;
   height: calc(100vh - calc(100vh - 100%));
+  max-height: 100vh;
+  max-height: -webkit-fill-available;
 }
 .view-pdf {
   text-align: center;

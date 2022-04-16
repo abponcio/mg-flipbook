@@ -119,7 +119,7 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
   display: flex;
-  margin-top: 1rem;
+  padding-top: 1rem;
   flex-direction: column;
   align-items: center;
   background-color: #fefbf6;
@@ -179,7 +179,7 @@ a {
 
 .flipbook .viewport {
   width: 90vw;
-  height: 80vh;
+  height: calc(90vh - 50px);
 }
 
 .flipbook .bounding-box {

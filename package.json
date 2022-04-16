@@ -15,6 +15,7 @@
     "dist": "rollup -c rollup.config.js"
   },
   "dependencies": {
+    "normalize.css": "^8.0.1",
     "rematrix": "^0.4.1"
   },
   "devDependencies": {

@@ -108,13 +108,7 @@ export default
 </script>
 
 <style>
-html, body {
-  margin: 0;
-  padding: 0;
-  max-height: 100vh;
-  overflow: hidden;
-}
-
+@import "~normalize.css/normalize.css";
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -124,7 +118,6 @@ html, body {
   display: flex;
   padding-block: 2rem;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   background-color: #fefbf6;
   color: #808080;
@@ -191,9 +184,6 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
-  #app {
-    justify-content: flex-start;
-  }
   .flipbook .viewport {
     height: calc(90vh - 50px);
   }

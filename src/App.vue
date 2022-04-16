@@ -119,8 +119,8 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
   display: flex;
+  margin-top: 1rem;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   background-color: #fefbf6;
   color: #808080;

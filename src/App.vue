@@ -179,10 +179,16 @@ a {
 
 .flipbook .viewport {
   width: 90vw;
-  height: calc(90vh - 50px);
+  height: calc(80vh - 50px);
 }
 
 .flipbook .bounding-box {
-  box-shadow: 0 0 25px rgb(232, 232, 232);
+  box-shadow: 0 10px 10px rgba(194, 185, 167, 0.3);
+}
+
+@media screen and (min-width: 1024px) {
+  .flipbook .viewport {
+    height: calc(90vh - 50px);
+  }
 }
 </style>

@@ -111,6 +111,7 @@ export default
 html, body {
   margin: 0;
   padding: 0;
+  max-height: 100vh;
 }
 
 #app {
@@ -118,9 +119,10 @@ html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
+  max-height: 100vh;
   display: flex;
-  padding-top: 1rem;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   background-color: #fefbf6;
   color: #808080;
@@ -179,16 +181,10 @@ a {
 
 .flipbook .viewport {
   width: 90vw;
-  height: calc(80vh - 50px);
+  height: calc(90vh - 50px);
 }
 
 .flipbook .bounding-box {
   box-shadow: 0 10px 10px rgba(194, 185, 167, 0.3);
-}
-
-@media screen and (min-width: 1024px) {
-  .flipbook .viewport {
-    height: calc(90vh - 50px);
-  }
 }
 </style>

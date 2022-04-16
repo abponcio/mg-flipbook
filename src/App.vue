@@ -112,6 +112,7 @@ html, body {
   margin: 0;
   padding: 0;
   max-height: 100vh;
+  overflow: hidden;
 }
 
 #app {
@@ -121,8 +122,8 @@ html, body {
   height: 100vh;
   max-height: 100vh;
   display: flex;
+  padding-block: 1rem;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   background-color: #fefbf6;
   color: #808080;
@@ -181,10 +182,16 @@ a {
 
 .flipbook .viewport {
   width: 90vw;
-  height: calc(90vh - 50px);
+  height: calc(60vh - 50px);
 }
 
 .flipbook .bounding-box {
   box-shadow: 0 10px 10px rgba(194, 185, 167, 0.3);
+}
+
+@media screen and (min-width: 1024px) {
+  .flipbook .viewport {
+    height: calc(90vh - 50px);
+  }
 }
 </style>

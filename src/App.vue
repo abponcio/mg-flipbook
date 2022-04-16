@@ -18,24 +18,25 @@
       @zoom-start="onZoomStart"
       @zoom-end="onZoomEnd"
     >
+      <div class="view-pdf">Having trouble viewing the invitation? Click <a href="https://bit.ly/mico-and-grace" target="_blank">here to view PDF.</a></div>
       <div class="action-bar">
         <left-icon
           class="btn left"
           :class="{ disabled: !flipbook.canFlipLeft }"
           @click="flipbook.flipLeft"
         />
-        <plus-icon
-          class="btn plus"
-          :class="{ disabled: !flipbook.canZoomIn }"
-          @click="flipbook.zoomIn"
-        />
-        <span class="page-num">
-          Page {{ flipbook.page }} of {{ flipbook.numPages }}
-        </span>
         <minus-icon
           class="btn minus"
           :class="{ disabled: !flipbook.canZoomOut }"
           @click="flipbook.zoomOut"
+        />
+        <span class="page-num">
+          Page {{ flipbook.page }} of {{ flipbook.numPages }}
+        </span>
+        <plus-icon
+          class="btn plus"
+          :class="{ disabled: !flipbook.canZoomIn }"
+          @click="flipbook.zoomIn"
         />
         <right-icon
           class="btn right"
@@ -135,6 +136,11 @@ export default
 
 <style>
 @import "~normalize.css/normalize.css";
+
+.view-pdf {
+  text-align: center;
+  font-size: 8px;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

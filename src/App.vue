@@ -4,10 +4,6 @@
     :class="{ 'has-mouse': hasMouse }"
     @touchstart="hasMouse = false"
   >
-    <Ribbon
-      text="Fork me on GitHub"
-      url="https://github.com/ts1/flipbook-vue"
-    />
     <Flipbook
       class="flipbook"
       :pages="pages"
@@ -48,10 +44,6 @@
         />
       </div>
     </Flipbook>
-    <p class="credit">
-      Photos from
-      <a href="https://unsplash.com/" target="_blank">Unsplash</a>.
-    </p>
   </div>
 </template>
 
@@ -101,8 +93,6 @@ export default
         'images/2.jpg'
         'images/3.jpg'
         'images/4.jpg'
-        'images/5.jpg'
-        'images/6.jpg'
       ]
       @pagesHiRes = [
         null
@@ -110,10 +100,8 @@ export default
         'images-large/2.jpg'
         'images-large/3.jpg'
         'images-large/4.jpg'
-        'images-large/5.jpg'
-        'images-large/6.jpg'
       ]
-    ), 1
+    ),
 
     window.addEventListener 'hashchange', @setPageFromHash
     @setPageFromHash()
@@ -132,9 +120,10 @@ html, body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  background-color: #333;
-  color: #ccc;
+  background-color: #fefbf6;
+  color: #808080;
   overflow: hidden;
 }
 
@@ -143,6 +132,10 @@ a {
 }
 
 .action-bar {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
   height: 30px;
   padding: 10px 0;
@@ -153,7 +146,7 @@ a {
 
 .action-bar .btn {
   font-size: 30px;
-  color: #999;
+  color: #BAA88C;
 }
 
 .action-bar .btn svg {
@@ -165,8 +158,6 @@ a {
 }
 
 .has-mouse .action-bar .btn:hover {
-  color: #ccc;
-  filter: drop-shadow(1px 1px 5px #000);
   cursor: pointer;
 }
 
@@ -175,7 +166,7 @@ a {
 }
 
 .action-bar .btn.disabled {
-  color: #666;
+  color: #ccc;
   pointer-events: none;
 }
 
@@ -186,16 +177,10 @@ a {
 
 .flipbook .viewport {
   width: 90vw;
-  height: calc(100vh - 50px - 40px);
+  height: 80vh;
 }
 
 .flipbook .bounding-box {
-  box-shadow: 0 0 20px #000;
-}
-
-.credit {
-  font-size: 12px;
-  line-height: 20px;
-  margin: 10px;
+  box-shadow: 0 0 25px rgb(232, 232, 232);
 }
 </style>

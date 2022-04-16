@@ -124,6 +124,7 @@ html, body {
   display: flex;
   padding-block: 2rem;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   background-color: #fefbf6;
   color: #808080;
@@ -182,7 +183,7 @@ a {
 
 .flipbook .viewport {
   width: 90vw;
-  height: calc(60vh - 50px);
+  height: 65vh;
 }
 
 .flipbook .bounding-box {
@@ -190,6 +191,9 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
+  #app {
+    justify-content: flex-start;
+  }
   .flipbook .viewport {
     height: calc(90vh - 50px);
   }

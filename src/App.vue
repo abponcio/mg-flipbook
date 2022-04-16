@@ -18,7 +18,7 @@
       @zoom-start="onZoomStart"
       @zoom-end="onZoomEnd"
     >
-      <div class="view-pdf">Having trouble viewing the invitation? Click <a href="https://bit.ly/mico-and-grace" target="_blank">here to view PDF.</a></div>
+      <div class="view-pdf">Having trouble viewing the invitation? <a href="https://bit.ly/mico-and-grace" target="_blank">Click here to view the PDF.</a></div>
       <div class="action-bar">
         <left-icon
           class="btn left"

@@ -206,6 +206,8 @@ a {
 .flipbook {
   display: flex;
   flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
   gap: 10px;
 }
 

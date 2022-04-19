@@ -76,36 +76,36 @@ export default
             null
             'images/1.jpg'
             'images/2.jpg'
-            'images/3.jpg'
+            'images/3.png'
             'images/7.jpg'
-            'images/4.jpg'
+            'images/4.png'
           ]
           @pagesHiRes = [
             null
             'images-large/1.jpg'
             'images-large/2.jpg'
-            'images-large/3.jpg'
+            'images-large/3.png'
             'images-large/7.jpg'
-            'images-large/4.jpg'
+            'images-large/4.png'
           ]
         else
           @pages = [
             null
             'images/1.jpg'
             'images/2.jpg'
-            'images/3.jpg'
+            'images/3.png'
             'images/5.jpg'
             'images/6.jpg'
-            'images/4.jpg'
+            'images/4.png'
           ]
           @pagesHiRes = [
             null
             'images-large/1.jpg'
             'images-large/2.jpg'
-            'images-large/3.jpg'
+            'images-large/3.png'
             'images-large/5.jpg'
             'images-large/6.jpg'
-            'images-large/4.jpg'
+            'images-large/4.png'
           ]
       ),
     onFlipLeftStart: (page) -> console.log 'flip-left-start', page

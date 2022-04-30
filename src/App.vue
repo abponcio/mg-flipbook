@@ -74,16 +74,16 @@ export default
         if vw < 444
           @pages = [
             null
-            'images/1.jpg'
-            'images/2.jpg'
+            'images/1.png'
+            'images/2.png'
             'images/3.png'
             'images/7.jpg'
             'images/4.png'
           ]
           @pagesHiRes = [
             null
-            'images-large/1.jpg'
-            'images-large/2.jpg'
+            'images-large/1.png'
+            'images-large/2.png'
             'images-large/3.png'
             'images-large/7.jpg'
             'images-large/4.png'
@@ -91,8 +91,8 @@ export default
         else
           @pages = [
             null
-            'images/1.jpg'
-            'images/2.jpg'
+            'images/1.png'
+            'images/2.png'
             'images/3.png'
             'images/5.jpg'
             'images/6.jpg'
@@ -100,8 +100,8 @@ export default
           ]
           @pagesHiRes = [
             null
-            'images-large/1.jpg'
-            'images-large/2.jpg'
+            'images-large/1.png'
+            'images-large/2.png'
             'images-large/3.png'
             'images-large/5.jpg'
             'images-large/6.jpg'

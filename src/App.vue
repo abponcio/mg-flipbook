@@ -18,7 +18,6 @@
       @zoom-start="onZoomStart"
       @zoom-end="onZoomEnd"
     >
-      <div class="view-pdf">Having trouble viewing the invitation? <br/> <br/><a href="https://drive.google.com/file/d/1QXARRIONj6fDu65dGNFxnpXLKra7R-rk/view?usp=sharing" target="_blank">Click here to view the PDF.</a></div>
 
       <div class="action-bar">
         <left-icon
